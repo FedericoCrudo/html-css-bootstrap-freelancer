@@ -2,8 +2,11 @@
     background-color: red;
     height: 200px;
     border:1px solid black;
+
   }
-  
+  .row [class*='col-']{
+   
+  }
   /* tipografy */
   h1 {
     font-size: 50px;
@@ -11,6 +14,12 @@
   }
   
   /* riutilizzabili */
+  .btn-primary-outline{
+    background-color: transparent;
+    border: 1px solid white;  
+    font-size: 25px;
+    
+}
   .ms_green {
     background-color: #1abc9c;
   }
@@ -19,6 +28,9 @@
   }
   .ms_text_white {
     color: white;
+  }
+  .ms_text_black {
+    color: black;
   }
   /* margini */
   .m_top_bott_50{
@@ -29,6 +41,7 @@
   .pd_B_30{
     padding-bottom: 30px;
   }
+
   /* hedaer */
   header {
     height: 90px;
@@ -62,16 +75,8 @@
     background-color: white;
     margin: 0 30px;
   }
-  .ms_star i {
-    font-size: 30px;
-    vertical-align: middle;
-  }
- 
-  #portfolio .row h2{
-    font-size: 40px;
-  }
-  #portfolio .ms_star:before,
-  #portfolio .ms_star:after {
+  .ms_star_black:before,
+  .ms_star_black:after{
     content: '';
     display: inline-block;
     width: 15%;
@@ -80,9 +85,49 @@
     background-color:#2C3E50;
     margin: 0 30px;
   }
+  .ms_star i {
+    font-size: 30px;
+    vertical-align: middle;
+  }
+ 
+  #portfolio .row h2{
+    font-size: 40px;
+  }
+ 
   #portfolio .row:last-child img{
     width: 100%;
     margin-bottom: 30px;
     border-radius: 15px;
   }
+  #about{
+      
+  }
+  #about .row p{
+    font-size: 20px;
+    padding-bottom: 50px;
+  }
+  .btn-primary-outline{
+      background-color: transparent;
+      border: 1px solid white;
+      
+  }
+  #about .row:last-child button i{
+        padding-right:10px;
+
+  }
+  #contact{
+      height: 400px;
+  }
+  .ms_star_black:before,
+  .ms_star_black:after{
+    content: '';
+    display: inline-block;
+    width: 15%;
+    height: 4px;
+    border-radius:2px;
+    background-color:#2C3E50;
+    margin: 0 30px;
+  }
+
+
   
