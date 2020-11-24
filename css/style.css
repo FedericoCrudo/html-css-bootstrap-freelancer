@@ -1,65 +1,88 @@
-nav{
-    background-color: rgb(54, 54, 77);
-    height: 80px;
-    width: 100%;
-}
-.row{
+.debug [class*='col-']{
+    background-color: red;
     height: 200px;
-
-}
-
-.row [class*="col-"] {
-    height: 100%;
-    border: 1px solid black;
+    border:1px solid black;
   }
-.jumbotron{
-    height: 700px;
-    background-color: rgb(107, 214, 107);
-    position: relative;
-}
- .jumbotron .start-bootstrap{
-    width: 35%;
-    height: 70%;
-    background-color: brown;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-}
-.bg_color-hotpink{
-    background-color: hotpink;
-}
-.bg_color-orange{
-    background-color: orangered;
-}
-#portfoli .row  span{
-    background-color: indigo;
-}
-#portfoli .row [class*="col-"]  img{
-   width: 20%;
-
-
-}
-#about{
-    height: 600px;
-    position: relative;
-    background-color: rgb(107, 214, 107); 
-}
-#about .about {
-    width: 35%;
-    height: 70%;
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%,-50%);
-}
-#contact{   
-    height: 500px;
-}
-
-#contact .row [class*="col-"]{   
-    height: 500px;
-}
-footer{
-    background-color: royalblue;
-}
+  
+  /* tipografy */
+  h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+  }
+  
+  /* riutilizzabili */
+  .ms_green {
+    background-color: #1abc9c;
+  }
+  .text_tras_up{
+    text-transform: uppercase;
+  }
+  .ms_text_white {
+    color: white;
+  }
+  /* margini */
+  .m_top_bott_50{
+    margin: 50px 0;
+  }
+ 
+  /* padding */
+  .pd_B_30{
+    padding-bottom: 30px;
+  }
+  /* hedaer */
+  header {
+    height: 90px;
+  }
+  
+  .navbar.ms_navbar{
+    background-color: #2c3e50;
+    border:0;
+    margin-bottom: 0;
+    padding: 20px 0;
+  }
+  
+  .navbar.ms_navbar .navbar-brand,
+  .navbar.ms_navbar .navbar-nav li a{
+    color:white;
+    text-transform: uppercase;
+  }
+  
+  .navbar.ms_navbar .navbar-nav li a:hover{
+    color:#1abc9c;
+  }
+  
+  /* jumbotron */
+  .ms_star:before,
+  .ms_star:after {
+    content: '';
+    display: inline-block;
+    width: 15%;
+    height: 4px;
+    border-radius:2px;
+    background-color: white;
+    margin: 0 30px;
+  }
+  .ms_star i {
+    font-size: 30px;
+    vertical-align: middle;
+  }
+ 
+  #portfolio .row h2{
+    font-size: 40px;
+  }
+  #portfolio .ms_star:before,
+  #portfolio .ms_star:after {
+    content: '';
+    display: inline-block;
+    width: 15%;
+    height: 4px;
+    border-radius:2px;
+    background-color:#2C3E50;
+    margin: 0 30px;
+  }
+  #portfolio .row:last-child img{
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 15px;
+  }
+  
